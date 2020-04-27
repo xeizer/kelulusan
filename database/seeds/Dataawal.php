@@ -17,5 +17,11 @@ class Dataawal extends Seeder
             'email' => 'keiser.form@gmail.com',
             'password' => bcrypt('rahasia'),
         ]);
+        User::create([
+            'name' => 'Teguh Firmansyah',
+            'email' => 't36uh.f4n5@gmail.com',
+            'password' => bcrypt('rahasia'),
+        ]);
+        
     }
 }
