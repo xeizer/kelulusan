@@ -33,7 +33,7 @@
                             @foreach ($data as $d)
                             <tr>
                                 <td scope="row">{{$loop->iteration}}</td>
-                                <td>{{ $d->nama }}</td>
+                                <td>{{ $d->user->name }}</td>
                                 <td>{{ $d->nis }}</td>
                                 <td>{{ $d->pstudi }}</td>
                                 <td>{{ $d->jurusan }}</td>

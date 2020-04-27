@@ -15,13 +15,14 @@ class CreateSiswasTable extends Migration
     {
         Schema::create('siswas', function (Blueprint $table) {
             $table->id();
-            $table->string('nama');
+            $table->bigInteger('user_id')->unsigned();
             $table->string('nis');
             $table->string('pstudi');
             $table->string('jurusan');
             $table->string('kelas');
             $table->string('wali')->nullable();
             $table->timestamps();
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
         });
     }
 
