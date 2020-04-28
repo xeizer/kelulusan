@@ -22,7 +22,8 @@
                                 <th>No</th>
                                 <th>nama</th>
                                 <th>nis</th>
-                                <th>pstudi</th>
+                                <th>Tempat Lahir</th>
+                                <th>Tanggal Lahir</th>
                                 <th>jurusan</th>
                                 <th>kelas</th>
                                 <th>wali</th>
@@ -34,8 +35,9 @@
                             <tr>
                                 <td scope="row">{{$loop->iteration}}</td>
                                 <td>{{ $d->user->name }}</td>
-                                <td>{{ $d->nis }}</td>
-                                <td>{{ $d->pstudi }}</td>
+                                <td>{{ $d->nisn }}</td>
+                                <td>{{ $d->tempat_lahir }}</td>
+                                <td>{{ $d->tanggal_lahir }}</td>
                                 <td>{{ $d->jurusan }}</td>
                                 <td>{{ $d->kelas }}</td>
                                 <td>{{ $d->wali }}</td>
