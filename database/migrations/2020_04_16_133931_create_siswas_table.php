@@ -21,6 +21,7 @@ class CreateSiswasTable extends Migration
             $table->string('jurusan');
             $table->string('kelas');
             $table->string('wali')->nullable();
+            $table->enum('keterangan', ['LULUS', 'TIDAK LULUS']);
             $table->timestamps();
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
         });

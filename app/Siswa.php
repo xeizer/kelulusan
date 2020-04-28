@@ -13,6 +13,7 @@ class Siswa extends Model
         'jurusan',
         'kelas',
         'wali',
+        'keterangan'
     ];
     public function user()
     {
