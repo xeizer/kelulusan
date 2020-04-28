@@ -20,6 +20,7 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/screenlock', 'HomeController@screenlock')->name('screenlock');
 Route::get('/mapel', 'MapelController@index')->name('mapel.index');
 Route::post('/mapel/import', 'MapelController@importMapel')->name('mapel.import');
 

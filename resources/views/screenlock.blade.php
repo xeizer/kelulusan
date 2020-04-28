@@ -1,5 +1,5 @@
 <html lang="en" class="fullscreen-bg"><head>
-	<title>Masuk | Info Kelulusan SMK Negeri 7 Pontianak</title>
+	<title>Kunci Layar | SMKN 7 PTK - INFO KELULUSAN</title>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="{{asset('admin/assets/vendor/bootstrap/css/bootstrap.min.css')}}">
 	<link rel="stylesheet" href="{{asset('admin/assets/vendor/font-awesome/css/font-awesome.min.css')}}">
 	<link rel="stylesheet" href="{{asset('admin/assets/vendor/linearicons/style.css')}}">
+	<!-- <link rel="stylesheet" href="{{asset('admin/assets/vendor/chartist/css/chartist-custom.css')}}"> -->
 	<!-- MAIN CSS -->
 	<link rel="stylesheet" href="{{asset('admin/assets/css/main.css')}}">
 	<!-- FOR DEMO PURPOSES ONLY. You should remove this in your project -->
@@ -32,6 +33,8 @@
 	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
 	<meta name="theme-color" content="#ffffff">
 
+	<!-- <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png"><link rel="apple-touch-icon" sizes="76x76" href="{{asset('admin/assets/img/apple-icon.png')}}">
+	<link rel="icon" type="image/png" sizes="96x96" href="{{asset('admin/assets/img/favicon.png')}}"> -->
 </head>
 
 <body>
@@ -39,84 +42,30 @@
 	<div id="wrapper">
 		<div class="vertical-align-wrap">
 			<div class="vertical-align-middle">
-				<div class="auth-box ">
-					<div class="left">
-						<div class="content">
-							<div class="header">
-								<div class="logo text-center"><img src="#" alt="SMKN 7 Logo"></div>
-								<p class="lead">Masuk dengan akun anda</p>
+				<div class="auth-box lockscreen clearfix">
+					<div class="content">
+						<h1 class="sr-only">SMKN 7 PTK - INFO KELULUSAN</h1>
+						<div class="logo text-center"><img src="#" alt="SMKN 7 Logo"></div>
+						<div class="user text-center">
+							<img src="#" class="img-circle" alt="Avatar">
+							<h2 class="name">{{ Auth::user()->name }}</h2>
+						</div>
+						<form method="POST" action="{{ route('login') }}">
+						@csrf
+
+							<div class="input-group">
+								<input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
+								<span class="input-group-btn"><button type="submit" class="btn btn-primary"><i class="fa fa-arrow-right"></i></button></span>
+
+								@error('password')
+									<span class="invalid-feedback" role="alert">
+										<strong>{{ $message }}</strong>
+									</span>
+								@enderror
 							</div>
-							<form method="POST" action="{{ route('login') }}">
-								@csrf
-
-								<div class="form-group row">
-									<label for="email" class="col-md-4 col-form-label text-md-right">{{ __('Surel') }}</label>
-
-									<div class="col-md-6">
-										<input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
-
-										@error('email')
-											<span class="invalid-feedback" role="alert">
-												<strong>{{ $message }}</strong>
-											</span>
-										@enderror
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Kata Sandi') }}</label>
-
-									<div class="col-md-6">
-										<input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
-
-										@error('password')
-											<span class="invalid-feedback" role="alert">
-												<strong>{{ $message }}</strong>
-											</span>
-										@enderror
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<div class="col-md-6 offset-md-4">
-										<div class="form-check">
-											<input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
-
-											<label class="form-check-label" for="remember">
-												{{ __('Ingatkan Saya') }}
-											</label>
-										</div>
-									</div>
-								</div>
-
-								<div class="form-group row mb-0">
-									<div class="col-md-8 offset-md-4">
-										<button type="submit" class="btn btn-primary">
-											{{ __('Masuk') }}
-										</button>
-										<a class="btn btn-primary" href="{{ route('register') }}">
-											{{ __('Daftar') }}
-										</a>
-
-										@if (Route::has('password.request'))
-											<a class="btn btn-link" href="{{ route('password.request') }}">
-												{{ __('Lupa Kata Sandi?') }}
-											</a>
-										@endif
-									</div>
-								</div>
-							</form>
-						</div>
+							
+						</form>
 					</div>
-					<div class="right">
-						<div class="overlay"></div>
-						<div class="content text">
-							<h1 class="heading">INFORMASI KELULUSAN SMK Negeri 7 Pontianak</h1>
-							<p>Team IT SMKN 7 Pontianak</p>
-							<!-- <p>Mutia Atmaja, S.Pd & Teguh Firmansyah, S.Pd</p> -->
-						</div>
-					</div>
-					<div class="clearfix"></div>
 				</div>
 			</div>
 		</div>
