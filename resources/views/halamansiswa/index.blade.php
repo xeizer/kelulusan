@@ -53,7 +53,7 @@
                             Ketik "SAYA SETUJU". jika Anda setuju untuk mematuhi peryaratan diatas
                             </p>
                             @enderror
-                            <input type="submit" class="btn btn-primary btn-block" value="Saya Setuju & Ingin Lihat Hasil">
+                            <input type="submit" class="btn btn-primary btn-block" value="Saya Setuju & Ingin Unduh Lembar Surat Kelulusan dalam bentuk PDF">
 
                         </form>
 
