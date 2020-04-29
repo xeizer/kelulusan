@@ -46,7 +46,7 @@
                                     <th>Tanggal Lahir</th>
                                     <th>jurusan</th>
                                     <th>kelas</th>
-                                    <th>wali</th>
+                                    <th>keterangan</th>
                                     <th>Data</th>
                                 </tr>
                             </thead>
@@ -60,7 +60,7 @@
                                     <td>{{ $d->tanggal_lahir }}</td>
                                     <td>{{ $d->jurusan }}</td>
                                     <td>{{ $d->kelas }}</td>
-                                    <td>{{ $d->wali }}</td>
+                                    <td>{{ $d->keterangan }}</td>
                                     <td>Data</td>
                                 </tr>
                                 @endforeach

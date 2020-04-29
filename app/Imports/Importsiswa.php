@@ -39,6 +39,7 @@ class Importsiswa implements ToCollection, WithHeadingRow
                     'jurusan' => $col['jurusan'],
                     'kelas' => $col['kelas'],
                     'wali' => $col['wali'],
+                    'keterangan' => $col['keterangan'],
                 ]
             );
         }
