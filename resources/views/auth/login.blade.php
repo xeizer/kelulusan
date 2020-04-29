@@ -44,7 +44,7 @@
 						<div class="content">
 							<div class="header">
 								<div class="logo text-center"><img src="{{asset('admin/assets/img/Rayyan/apple-icon-144x144.png')}}" alt="SMKN 7 Logo"></div>
-								<p class="lead">Masuk dengan akun anda2</p>
+								<p class="lead"><b>Masuk dengan akun anda</b></p>
 							</div>
 							<form method="POST" action="{{ route('login') }}">
 								@csrf
@@ -107,9 +107,9 @@
 					<div class="right">
 						<div class="overlay"></div>
 						<div class="content text">
-							<h1 class="heading">INFORMASI KELULUSAN SMK Negeri 7 Pontianak</h1>
-							<p>Team IT SMKN 7 Pontianak</p>
-							<!-- <p>Mutia Atmaja, S.Pd & Teguh Firmansyah, S.Pd</p> -->
+							<h1 class="heading"><b>INFORMASI KELULUSAN SMK Negeri 7 Pontianak</b></h1>
+							<h3><i>Team IT SMK Negeri 7 Pontianak</i></h3>
+							<p><i>Mutia Atmaja, S.Pd - Teguh Firmansyah, S.Pd</i></p>
 						</div>
 					</div>
 					<div class="clearfix"></div>
