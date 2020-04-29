@@ -22,6 +22,6 @@ class HalamansiswaController extends Controller
             'keterangan' => $siswa->keterangan,
         ];
         $pdf = PDF::loadView('halamansiswa.cetak', $data)->setPaper('a4');
-        return $pdf->stream('Surat Kelulusan' . $data['nisn'] . '.pdf');
+        return $pdf->download('Surat Kelulusan' . $data['nisn'] . '.pdf');
     }
 }
