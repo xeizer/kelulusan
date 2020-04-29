@@ -94,10 +94,6 @@
 										<button type="submit" class="btn btn-primary">
 											{{ __('Masuk') }}
 										</button>
-										<a class="btn btn-primary" href="{{ route('register') }}">
-											{{ __('Daftar') }}
-										</a>
-
 										@if (Route::has('password.request'))
 											<a class="btn btn-link" href="{{ route('password.request') }}">
 												{{ __('Lupa Kata Sandi?') }}
