@@ -40,7 +40,7 @@
                                 <tr>
                                     <th>No</th>
                                     <th>nama</th>
-                                    <th>nis</th>
+                                    <th>nisn</th>
                                     <th>Tempat Lahir</th>
                                     <th>Tanggal Lahir</th>
                                     <th>jurusan</th>
