@@ -39,13 +39,13 @@
                             <thead>
                                 <tr>
                                     <th>No</th>
-                                    <th>nama</th>
-                                    <th>nis</th>
+                                    <th>Nama</th>
+                                    <th>NISN</th>
                                     <th>Tempat Lahir</th>
                                     <th>Tanggal Lahir</th>
-                                    <th>jurusan</th>
-                                    <th>kelas</th>
-                                    <th>keterangan</th>
+                                    <th>Jurusan</th>
+                                    <th>Kelas</th>
+                                    <th>Keterangan</th>
                                     <th>Data</th>
                                 </tr>
                             </thead>
