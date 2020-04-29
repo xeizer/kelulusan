@@ -10,18 +10,24 @@ use Illuminate\Support\Facades\Auth;
 class HalamansiswaController extends Controller
 {
     //
-    public function cetak()
+    public function cetak(Request $req)
     {
-        $siswa = Siswa::where('user_id', Auth::id())->first();
+        if ($req->setuju == "SAYA SETUJU") {
+            $siswa = Siswa::where('user_id', Auth::id())->first();
 
-        $data = [
-            'nama' => $siswa->user->name,
-            'nisn' => $siswa->nisn,
-            'jurusan' => $siswa->jurusan,
-            'ttl' => $siswa->tempat_lahir . " , " . date('d/m/Y', strtotime($siswa->tanggal_lahir)),
-            'keterangan' => $siswa->keterangan,
-        ];
-        $pdf = PDF::loadView('halamansiswa.cetak', $data)->setPaper('a4');
-        return $pdf->download('Surat Kelulusan' . $data['nisn'] . '.pdf');
+            $data = [
+                'nama' => $siswa->user->name,
+                'nisn' => $siswa->nisn,
+                'jurusan' => $siswa->jurusan,
+                'ttl' => $siswa->tempat_lahir . " , " . date('d/m/Y', strtotime($siswa->tanggal_lahir)),
+                'keterangan' => $siswa->keterangan,
+            ];
+            $pdf = PDF::loadView('halamansiswa.cetak', $data)->setPaper('a4');
+            return $pdf->download('Surat Kelulusan' . $data['nisn'] . '.pdf');
+        } else {
+            return back()->withErrors([
+                'pesan' => 'Anda harus mengetik "SAYA SETUJU" '
+            ]);
+        }
     }
 }

@@ -31,4 +31,4 @@ Route::get('/siswa', 'SiswaController@index')->middleware('role:admin')->name('s
 Route::post('/siswa/import', 'SiswaController@importSiswa')->middleware('role:admin')->name('siswa.import');
 
 //halaman sisswa
-Route::get('semoga/saya/lulus', 'HalamansiswaController@cetak')->name('cetak')->middleware('role:siswa');
+Route::post('semoga/saya/lulus', 'HalamansiswaController@cetak')->name('cetak')->middleware('role:siswa');
