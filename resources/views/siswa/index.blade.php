@@ -12,8 +12,8 @@
                         @csrf
                         <div class="input-group">   
                             <input type="file" name="file" class="form-control-file" />
-                            <span class="input-group-btn"><button class="btn btn-primary btn-toastr" type="submit" value="Import">Import</button></span>
-                            <a href="{{route('home')}}" class="btn btn-secondary btn-toastr">Kembali ke Home</a>
+                            <span class="input-group-btn"><button class="btn btn-primary btn-toastr" type="submit" value="Import"><i class="fa fa-upload"></i> Import</button></span>
+                            <a href="{{route('home')}}" class="btn btn-secondary btn-toastr fa fa-home"> Kembali ke Home</a>
                         </div>
                     </form>
                 <!-- END CONTEXTUAL -->
