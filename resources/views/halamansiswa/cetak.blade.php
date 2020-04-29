@@ -43,6 +43,13 @@
                         <td>Nama</td>
                         <td style="padding-right: 20px; padding-left: 30px">:</td>
                         <td>{{$nama}}</td>
+                        <td rowspan="5" style="padding-left: 30px">
+                            @if(file_exists('foto/'.Auth::user()->siswa->nisn.'.jpg'))
+                            <img src="{{asset('foto/'.Auth::user()->siswa->nisn.'.jpg')}}" width="90px" />
+                            @else
+                            <img src="foto/nofoto.png" />
+                            @endif
+                        </td>
                     </tr>
                     <tr>
                         <td>Nomor Induk Siswa Nasional (NISN)</td>

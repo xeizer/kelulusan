@@ -14,7 +14,6 @@ class HalamansiswaController extends Controller
     {
         if ($req->setuju == "SAYA SETUJU") {
             $siswa = Siswa::where('user_id', Auth::id())->first();
-
             $data = [
                 'nama' => $siswa->user->name,
                 'nisn' => $siswa->nisn,
@@ -23,6 +22,7 @@ class HalamansiswaController extends Controller
                 'keterangan' => $siswa->keterangan,
             ];
             $pdf = PDF::loadView('halamansiswa.cetak', $data)->setPaper('a4');
+            //$pdf->setEncryption('rahasia', 'rahasia', array('copy', 'print'));
             return $pdf->download('Surat Kelulusan' . $data['nisn'] . '.pdf');
         } else {
             return back()->withErrors([

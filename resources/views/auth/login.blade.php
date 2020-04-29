@@ -108,7 +108,7 @@
 						<div class="overlay"></div>
 						<div class="content text">
 							<h1 class="heading"><b>INFORMASI KELULUSAN SMK Negeri 7 Pontianak</b></h1>
-							<h3><i>Team IT SMK Negeri 7 Pontianak</i></h3>
+							<h3><i>Team IT-Research and Developmen SMK Negeri 7 Pontianak</i></h3>
 							<p><i>Mutia Atmaja, S.Pd - Teguh Firmansyah, S.Pd</i></p>
 						</div>
 					</div>
