@@ -156,7 +156,7 @@
 	<script src="{{asset('admin/assets/vendor/jquery-slimscroll/jquery.slimscroll.min.js')}}"></script>
 	<!-- <script src="{{asset('admin/assets/vendor/jquery.easy-pie-chart/jquery.easypiechart.min.js')}}"></script>
 	<script src="{{asset('admin/assets/vendor/chartist/js/chartist.min.js')}}"></script> -->
-    <script src="{{asset('admin/assets/scripts/klorofil-common.js')}}"></script>
+    <!--<script src="{{asset('admin/assets/scripts/klorofil-common.js')}}"></script> -->
 
 <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.js"></script>
     @stack('script')
