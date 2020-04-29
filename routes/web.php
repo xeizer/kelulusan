@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('test', function () {
     return view('layouts.master');
 });
-Auth::routes(['register' => false]);
+Auth::routes();
 Route::get('/', 'HomeController@index');
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/screenlock', 'HomeController@screenlock')->name('screenlock');
