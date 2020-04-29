@@ -11,9 +11,9 @@
 
                         <form action="{{route('siswa.import')}}" class="form-inline" method="post" enctype="multipart/form-data">
                             @csrf
-                            <a href="{{route('home')}}" class="btn btn-secondary col-3">Kembali ke Home</a>
-                            <input type="file" name="file" class="form-control-filr col-6" />
-                            <input type="submit" class="btn btn-primary btn-block col-3" value="Import" />
+                            <a href="{{route('home')}}" class="btn btn-secondary">Kembali ke Home</a>
+                            <input type="file" name="file" class="form-control-file" />
+                            <input type="submit" class="btn btn-primary" value="Import" />
                         </form>
 
                     </div>
