@@ -17,10 +17,11 @@
                             Sebelum anda mengetahui kelulusan, Anda harus menyetujui persyaratan dibawah ini.
                             <ol>
                                 <li>Tidak melakukan pawai</li>
+                                <li>Tidak melakukan coret-coret seragam sekolah</li>
                                 <li>dll dlll</li>
                             </ol>
                         </p>
-                        <a href="{{route('cetak')}}" class="btn btn-primary">Lihat Hasil</a>
+                        <a href="{{route('cetak')}}" class="btn btn-primary">Saya Setuju & Ingin Lihat Hasil</a>
                     </div>
                 </div>
             </div>
