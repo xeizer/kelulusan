@@ -13,16 +13,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('test', function () {
+    return view('layouts.master');
 });
-
 Auth::routes();
-
+Route::get('/', 'HomeController@index');
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/screenlock', 'HomeController@screenlock')->name('screenlock');
-Route::get('/mapel', 'MapelController@index')->name('mapel.index');
-Route::post('/mapel/import', 'MapelController@importMapel')->name('mapel.import');
+Route::get('/mapel', 'MapelController@index')->middleware('role:admin')->name('mapel.index');
+Route::post('/mapel/import', 'MapelController@importMapel')->middleware('role:admin')->name('mapel.import');
 
-Route::get('/siswa', 'SiswaController@index')->name('siswa.index');
-Route::post('/siswa/import', 'SiswaController@importSiswa')->name('siswa.import');
+Route::get('/siswa', 'SiswaController@index')->middleware('role:admin')->name('siswa.index');
+Route::post('/siswa/import', 'SiswaController@importSiswa')->middleware('role:admin')->name('siswa.import');
