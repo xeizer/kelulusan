@@ -10,7 +10,8 @@
 	<link rel="stylesheet" href="{{asset('admin/assets/vendor/bootstrap/css/bootstrap.min.css')}}">
 	<link rel="stylesheet" href="{{asset('admin/assets/vendor/font-awesome/css/font-awesome.min.css')}}">
 	<link rel="stylesheet" href="{{asset('admin/assets/vendor/linearicons/style.css')}}">
-	<!-- <link rel="stylesheet" href="{{asset('admin/assets/vendor/chartist/css/chartist-custom.css')}}"> -->
+    <!-- <link rel="stylesheet" href="{{asset('admin/assets/vendor/chartist/css/chartist-custom.css')}}"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<!-- MAIN CSS -->
 	<link rel="stylesheet" href="{{asset('admin/assets/css/main.css')}}">
 	<!-- FOR DEMO PURPOSES ONLY. You should remove this in your project -->
@@ -30,7 +31,9 @@
 	<link rel="icon" type="image/png" sizes="192x192"  href="{{asset('admin/assets/img/Rayyan/android-icon-192x192.png')}}">
 	<link rel="icon" type="image/png" sizes="32x32" href="{{asset('admin/assets/img/Rayyan/favicon-32x32.png')}}">
 	<link rel="icon" type="image/png" sizes="96x96" href="{{asset('admin/assets/img/Rayyan/favicon-96x96.png')}}">
-	<link rel="icon" type="image/png" sizes="16x16" href="{{asset('admin/assets/img/Rayyan/favicon-16x16.png')}}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{asset('admin/assets/img/Rayyan/favicon-16x16.png')}}">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.css">
+
 	<link rel="manifest" href="/manifest.json">
 	<meta name="msapplication-TileColor" content="#ffffff">
 	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
@@ -107,11 +110,15 @@
 		<div id="sidebar-nav" class="sidebar">
 			<div class="sidebar-scroll">
 				<nav>
+                    @role('siswa')
+                    <ul class="nav">
+						<li><a href="{{route('home')}}" class="active"><i class="lnr lnr-home"></i> <span>Dashboard</span></a></li>
+                    @else
 					<ul class="nav">
-						<li><a href="#" class="active"><i class="lnr lnr-home"></i> <span>Dashboard</span></a></li>
-						<li><a href="#" class=""><i class="lnr lnr-code"></i> <span>Menu 1</span></a></li>
-						<li><a href="#" class=""><i class="lnr lnr-chart-bars"></i> <span>Grafik</span></a></li>
-						<li><a href="#" class=""><i class="lnr lnr-cog"></i> <span>Panels</span></a></li>
+						<li><a href="{{route('home')}}" class="active"><i class="lnr lnr-home"></i> <span>Dashboard</span></a></li>
+						<li><a href="{{route('mapel.index')}}" class=""><i class="lnr lnr-code"></i> <span>Mapel</span></a></li>
+						<li><a href="{{route('siswa.index')}}" class=""><i class="lnr lnr-chart-bars"></i> <span>Siswa</span></a></li>
+						<li><a href="#" class=""><i class="lnr lnr-cog"></i> <span>Akun</span></a></li>
 						<li><a href="#" class=""><i class="lnr lnr-alarm"></i> <span>Pemberitahuan</span></a></li>
 						<li>
 							<a href="#subPages" data-toggle="collapse" class="collapsed"><i class="lnr lnr-file-empty"></i> <span>Halaman</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
@@ -124,7 +131,8 @@
 							</div>
 						</li>
 						<li><a href="tables.html" class=""><i class="lnr lnr-dice"></i> <span>Tabel</span></a></li>
-					</ul>
+                    </ul>
+                    @endrole
 				</nav>
 			</div>
 		</div>
@@ -154,8 +162,11 @@
 	<script src="{{asset('admin/assets/vendor/jquery-slimscroll/jquery.slimscroll.min.js')}}"></script>
 	<!-- <script src="{{asset('admin/assets/vendor/jquery.easy-pie-chart/jquery.easypiechart.min.js')}}"></script>
 	<script src="{{asset('admin/assets/vendor/chartist/js/chartist.min.js')}}"></script> -->
-	<script src="{{asset('admin/assets/scripts/klorofil-common.js')}}"></script>
-	<script>
+    <script src="{{asset('admin/assets/scripts/klorofil-common.js')}}"></script>
+
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.js"></script>
+    @stack('script')
+
 
 </body>
 
