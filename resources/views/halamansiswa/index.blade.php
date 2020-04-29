@@ -16,16 +16,33 @@
                         <div class="alert alert-danger">{{$errors->first()}}</div>
 
                         @endif
-                        <p>Selamat datang di halaman Pengumuman Kelulusan SMK Negeri 7 Pontianak</p>
-                        <p>
-                            Sebelum anda mengetahui kelulusan, Anda harus menyetujui persyaratan dibawah ini.
-                            <ol>
-                                <li>Tidak melakukan Pawai atau berkumpul</li>
-                                <li>Tidak melakukan coret-coret seragam sekolah</li>
-                                <li>Seragam untuk dapat disumbangkan</li>
-                                <li>Lembar Surat kelulusan yang Anda download dapat anda Cetak</li>
-                            </ol>
-                        </p>
+                        <div class="row">
+                            <div class="col-md-3">
+
+                            @if(file_exists('foto/'.Auth::user()->siswa->nisn.'.jpg'))
+                            <img src="{{asset('foto/'.Auth::user()->siswa->nisn.'.jpg')}}" width="180px" />
+                            @else
+                            <img src="foto/nofoto.png" />
+                            @endif
+                            </div>
+                            <div class="col-md-9">
+
+                                <p>Selamat datang di halaman Pengumuman Kelulusan SMK Negeri 7 Pontianak</p>
+                                    <p>
+                                        Sebelum anda mengetahui kelulusan, Anda harus menyetujui persyaratan dibawah ini.
+                                        <ol>
+                                            <li>Mengembalikan buku paket BOS yang dipinjam setelah disampul rapi dan buku dalam keadaan baik</li>
+                                            <li>Tidak melakukan Pawai atau berkumpul</li>
+                                            <li>Tidak melakukan coret-coret seragam sekolah</li>
+                                            <li>Seragam untuk dapat disumbangkan</li>
+                                            <li>Lembar Surat kelulusan yang Anda download dapat anda Cetak</li>
+                                            <li>Transkrip nilai menyusul</li>
+                                        </ol>
+                                    </p>
+                            </div>
+                        </div>
+
+                        <br /><br />
                         <form action="{{route('cetak')}}" method="POST">
                             @csrf
                             <label>Ketik "SAYA SETUJU". jika Anda setuju untuk mematuhi peryaratan diatas</label>
