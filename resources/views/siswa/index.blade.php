@@ -1,32 +1,31 @@
 @extends('layouts.master')
 
 @section('content')
-<div class="panel panel-headline">
-    <div class="panel-body">
-        <div class="row justify-content-center">
-            <div class="col-md-12">
-                <div class="card">
 
-                    <div class="card-body">
-
-                        <form action="{{route('siswa.import')}}" class="form-inline" method="post" enctype="multipart/form-data">
-                            @csrf
-                            <a href="{{route('home')}}" class="btn btn-secondary">Kembali ke Home</a>
+<div class="main-content">
+    <div class="container-fluid">
+        <div id="toastr-demo" class="panel">
+            <div class="panel-body">
+                <!-- CONTEXTUAL -->
+                <h4>Input Data Siswa</h4>
+                    <form action="{{route('siswa.import')}}" class="form-inline" method="post" enctype="multipart/form-data">
+                        @csrf
+                        <div class="input-group">   
                             <input type="file" name="file" class="form-control-file" />
-                            <input type="submit" class="btn btn-primary" value="Import" />
-                        </form>
-
-                    </div>
-                </div>
+                            <span class="input-group-btn"><button class="btn btn-primary btn-toastr" type="submit" value="Import">Import</button></span>
+                            <a href="{{route('home')}}" class="btn btn-secondary btn-toastr">Kembali ke Home</a>
+                        </div>
+                    </form>
+                <!-- END CONTEXTUAL -->
             </div>
-
         </div>
     </div>
 </div>
+
 <div class="panel panel-headline">
     <div class="panel-heading">
-        <h3 class="panel-title">DASHBOARD</h3>
-        <p class="panel-subtitle">Informasi Kelulusan Siswa SMK Negeri 7 Pontianak</p>
+        <h3 class="panel-title">DATA SISWA SMK NEGERI 7 PONTIANAK</h3>
+        <p class="panel-subtitle">Kelas XII Tahun Pelajaran 2019 - 2020</p>
     </div>
     <div class="panel-body">
         <div class="row justify-content-center">

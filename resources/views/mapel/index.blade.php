@@ -1,32 +1,30 @@
 @extends('layouts.master')
 
 @section('content')
-<div class="panel panel-headline">
-    <div class="panel-body">
-        <div class="row justify-content-center">
-            <div class="col-md-12">
-                <div class="card">
-
-                    <div class="card-body">
-
-                         <form action="{{route('mapel.import')}}" class="form-inline" method="post" enctype="multipart/form-data">
+<div class="main-content">
+    <div class="container-fluid">
+        <div id="toastr-demo" class="panel">
+            <div class="panel-body">
+                <!-- CONTEXTUAL -->
+                <h4>Input Data Mata Pelajaran</h4>
+                    <form action="{{route('mapel.import')}}" class="form-inline" method="post" enctype="multipart/form-data">
                         @csrf
-                        <a href="{{route('home')}}" class="btn btn-secondary col-3">Kembali ke Home</a>
-                        <input type="file" name="file" class="form-control-filr col-6" />
-                        <input type="submit" class="btn btn-primary btn-block col-3" value="Import" />
+                        <div class="input-group">   
+                            <input type="file" name="file" class="form-control-file" />
+                            <span class="input-group-btn"><button class="btn btn-primary btn-toastr" type="submit" value="Import">Import</button></span>
+                            <a href="{{route('home')}}" class="btn btn-secondary btn-toastr">Kembali ke Home</a>
+                        </div>
                     </form>
-
-                    </div>
-                </div>
+                <!-- END CONTEXTUAL -->
             </div>
-
         </div>
     </div>
 </div>
+
 <div class="panel panel-headline">
     <div class="panel-heading">
-        <h3 class="panel-title">DASHBOARD</h3>
-        <p class="panel-subtitle">Informasi Kelulusan Siswa SMK Negeri 7 Pontianak</p>
+        <h3 class="panel-title">DAFTAR MATA PELAJARAN</h3>
+        <p class="panel-subtitle">SMK Negeri 7 Pontianak</p>
     </div>
     <div class="panel-body">
         <div class="row justify-content-center">
