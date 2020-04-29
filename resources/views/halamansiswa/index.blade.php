@@ -72,6 +72,10 @@
                             @else
                             <img src="foto/nofoto.png" />
                             @endif
+                            <br />
+                            <b>{{Auth::user()->name}}</b><br />
+                            <b>{{Auth::user()->siswa->nisn}}</b><br />
+                            <b>{{Auth::user()->siswa->jurusan}}</b><br />
                             </div>
                             <div class="col-md-9">
 

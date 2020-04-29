@@ -57,20 +57,7 @@
 				</div>
 				<div id="navbar-menu">
 					<ul class="nav navbar-nav navbar-right">
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle icon-menu" data-toggle="dropdown">
-								<i class="lnr lnr-alarm"></i>
-								<span class="badge bg-danger">5</span>
-							</a>
-							<ul class="dropdown-menu notifications">
-								<li><a href="#" class="notification-item"><span class="dot bg-warning"></span>Pesan 1</a></li>
-								<li><a href="#" class="notification-item"><span class="dot bg-danger"></span>Pesan 2</a></li>
-								<li><a href="#" class="notification-item"><span class="dot bg-success"></span>Pesan 3</a></li>
-								<li><a href="#" class="notification-item"><span class="dot bg-warning"></span>Pesan 4</a></li>
-								<li><a href="#" class="notification-item"><span class="dot bg-success"></span>Pesan 5</a></li>
-								<li><a href="#" class="more">See all notifications</a></li>
-							</ul>
-						</li>
+
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="lnr lnr-question-circle"></i> <span>Bantuan</span> <i class="icon-submenu lnr lnr-chevron-down"></i></a>
 							<ul class="dropdown-menu">
@@ -83,9 +70,6 @@
                             <li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="{{asset('logo/android-icon-72x72.png')}}" class="img-circle" alt="Avatar"> <span>{{ Auth::user()->name }}</span><span class="caret"></span></a>
 							<ul class="dropdown-menu">
-								<li><a href="#"><i class="lnr lnr-user"></i> <span>Tentang Saya</span></a></li>
-								<li><a href="#"><i class="lnr lnr-envelope"></i> <span>Pesan</span></a></li>
-								<li><a href="#"><i class="lnr lnr-cog"></i> <span>Pengaturan</span></a></li>
                                 <li>
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                         onclick="event.preventDefault();
@@ -112,8 +96,6 @@
 						<li><a href="{{route('home')}}" class="active"><i class="lnr lnr-home"></i> <span>Dashboard</span></a></li>
 						<li><a href="{{route('mapel.index')}}" class=""><i class="lnr lnr-code"></i> <span>Mapel</span></a></li>
 						<li><a href="{{route('siswa.index')}}" class=""><i class="lnr lnr-chart-bars"></i> <span>Siswa</span></a></li>
-						<li><a href="#" class=""><i class="lnr lnr-cog"></i> <span>Akun</span></a></li>
-						<li><a href="#" class=""><i class="lnr lnr-alarm"></i> <span>Pemberitahuan</span></a></li>
 						<li>
 							<a href="#subPages" data-toggle="collapse" class="collapsed"><i class="lnr lnr-file-empty"></i> <span>Halaman</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
 							<div id="subPages" class="collapse ">
