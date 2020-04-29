@@ -20,6 +20,7 @@
                                 <li>dll dlll</li>
                             </ol>
                         </p>
+                        <a href="{{route('cetak')}}" class="btn btn-primary">Lihat Hasil</a>
                     </div>
                 </div>
             </div>

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\HalamansiswaController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,6 +17,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('test', function () {
     return view('layouts.master');
 });
+Route::get('cetak', function () {
+    return view('halamansiswa.cetak');
+});
 Auth::routes();
 Route::get('/', 'HomeController@index');
 Route::get('/home', 'HomeController@index')->name('home');
@@ -25,3 +29,6 @@ Route::post('/mapel/import', 'MapelController@importMapel')->middleware('role:ad
 
 Route::get('/siswa', 'SiswaController@index')->middleware('role:admin')->name('siswa.index');
 Route::post('/siswa/import', 'SiswaController@importSiswa')->middleware('role:admin')->name('siswa.import');
+
+//halaman sisswa
+Route::get('semoga/saya/lulus', 'HalamansiswaController@cetak')->name('cetak')->middleware('role:siswa');
