@@ -12,7 +12,7 @@ class HalamansiswaController extends Controller
     //
     public function cetak()
     {
-        $siswa = Siswa::find(Auth::id());
+        $siswa = Siswa::where('user_id', Auth::id());
 
         $data = [
             'nama' => $siswa->user->name,
