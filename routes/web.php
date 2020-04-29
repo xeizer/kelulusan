@@ -13,12 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('test', function () {
+    return view('layouts.master');
 });
-
 Auth::routes();
-
+Route::get('/', 'HomeController@index');
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/screenlock', 'HomeController@screenlock')->name('screenlock');
 Route::get('/mapel', 'MapelController@index')->name('mapel.index');

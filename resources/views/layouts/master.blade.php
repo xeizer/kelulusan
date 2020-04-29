@@ -82,7 +82,7 @@
 								<li><a href="#">Keamanan</a></li>
 							</ul>
                         </li>
-                        
+
                             <li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="{{asset('admin/Rayyan.png')}}" class="img-circle" alt="Avatar"> <span>{{ Auth::user()->name }}</span><span class="caret"></span></a>
 							<ul class="dropdown-menu">
@@ -130,7 +130,15 @@
 		</div>
 		<!-- END LEFT SIDEBAR -->
 		<!-- MAIN -->
-		@yield('content')
+
+        <div class="main">
+	<!-- MAIN CONTENT -->
+            <div class="main-content">
+                <div class="container-fluid">
+                    @yield('content')
+                </div>
+            </div>
+
 		<!-- END MAIN -->
 		<div class="clearfix"></div>
 		<footer>

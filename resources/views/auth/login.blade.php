@@ -43,8 +43,8 @@
 					<div class="left">
 						<div class="content">
 							<div class="header">
-								<div class="logo text-center"><img src="#" alt="SMKN 7 Logo"></div>
-								<p class="lead">Masuk dengan akun anda</p>
+								<div class="logo text-center"><img src="{{asset('admin/assets/img/Rayyan/apple-icon-144x144.png')}}" alt="SMKN 7 Logo"></div>
+								<p class="lead">Masuk dengan akun anda2</p>
 							</div>
 							<form method="POST" action="{{ route('login') }}">
 								@csrf
