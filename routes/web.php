@@ -29,6 +29,8 @@ Route::post('/mapel/import', 'MapelController@importMapel')->middleware('role:ad
 
 Route::get('/siswa', 'SiswaController@index')->middleware('role:admin')->name('siswa.index');
 Route::post('/siswa/import', 'SiswaController@importSiswa')->middleware('role:admin')->name('siswa.import');
+Route::get('/siswa/lihat/{id}', 'SiswaController@lihatsiswa')->middleware('role:admin')->name('siswa.lihat');
+Route::post('/siswa/cetak/', 'SiswaController@cetak')->middleware('role:admin')->name('siswa.cetak');
 
 //halaman sisswa
-Route::post('semoga/saya/lulus', 'HalamansiswaController@cetak')->name('cetak')->middleware('role:siswa');
+Route::post('semoga/saya/lulus', 'HalamansiswaController@cetak')->name('cetak')->middleware('role:siswa|admin');

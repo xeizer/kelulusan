@@ -10,7 +10,7 @@
                 <h4>Input Data Siswa</h4>
                     <form action="{{route('siswa.import')}}" class="form-inline" method="post" enctype="multipart/form-data">
                         @csrf
-                        <div class="input-group">   
+                        <div class="input-group">
                             <input type="file" name="file" class="form-control-file" />
                             <span class="input-group-btn"><button class="btn btn-primary btn-toastr" type="submit" value="Import"><i class="fa fa-upload"></i> Import</button></span>
                             <a href="{{route('home')}}" class="btn btn-secondary btn-toastr fa fa-home"> Kembali ke Home</a>
@@ -60,7 +60,7 @@
                                     <td>{{ $d->jurusan }}</td>
                                     <td>{{ $d->kelas }}</td>
                                     <td>{{ $d->keterangan }}</td>
-                                    <td>Data</td>
+                                    <td><a href="{{route('siswa.lihat',$d->id)}}">Lihat</a></td>
                                 </tr>
                                 @endforeach
                             </tbody>
