@@ -103,7 +103,7 @@ Menerangkan bahwa yang namanya tercantum diatas dinyatakan:
                                     Pontianak, 2 Mei 2020<br/>
                                     Kepala SMK Negeri 7 Pontianak<br /><br />
 
-                                    <img src="{{asset('admin/ttdkepsek_abriyandi.png')}}" width="100px" style="margin-top: 80px;margin-bottom: -300px"/>
+                                    <img src="{{asset('admin/ttdkepsek_abriyandi.png')}}" width="100px"/>
                                     <div style="border-bottom: 1px solid black;">ABRIYANDI, S.Pd, M.Si.</div>
                                     NIP. 19741009 199903 1 006
 
