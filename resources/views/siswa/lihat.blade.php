@@ -43,7 +43,7 @@
                                                             <li>Mengembalikan buku paket BOS yang dipinjam setelah disampul rapi dan buku dalam keadaan baik</li>
                                                             <li>Tidak melakukan Pawai atau berkumpul</li>
                                                             <li>Melaksanakan Anjuran Pemerintah mengenai Pembatasan Covid-19</li>
-                                                            <li>Tidak melakukan coret-coret seragam sekolah</li>
+                                                            <li>Tidak melakukan Aksi coret-coret seragam sekolah</li>
                                                             <li>Seragam untuk dapat disumbangkan</li>
                                                             <li>Lembar Surat kelulusan yang Anda download dapat anda Cetak dan di CAP di SMK Negeri 7 Pontianak</li>
                                                             <li>Transkrip nilai menyusul</li>
