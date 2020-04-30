@@ -4,9 +4,10 @@ namespace App\Http\Controllers;
 
 use App\Imports\Importsiswa;
 use App\Siswa;
+use PDF;
 use Illuminate\Http\Request;
 use Maatwebsite\Excel\Facades\Excel;
-use PDF;
+
 
 class SiswaController extends Controller
 {

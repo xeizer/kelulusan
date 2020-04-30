@@ -68,7 +68,7 @@
                                         </form>
                                         @else
                                         <div class="alert alert-info" role="alert">
-                                            <strong>Pengumuman Kelulisan dijadwalkan pada: 2 Mei 2020 , 16:00 WIB</strong>
+                                            <strong>Pengumuman Kelulusan dijadwalkan pada: 2 Mei 2020 , 16:00 WIB</strong>
                                         </div>
                                         @endif
 
