@@ -31,7 +31,7 @@
                                             @endif
                                             <br />
                                             <b>{{$data->user->name}}</b><br />
-                                            <b>{{$data->nisn}}</b><br />
+                                            <b>NISN. {{$data->nisn}}</b><br />
                                             <b>{{$data->jurusan}}</b><br />
                                             </div>
                                             <div class="col-md-9">
