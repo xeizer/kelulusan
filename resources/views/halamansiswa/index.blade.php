@@ -30,9 +30,9 @@
                                             <img src="foto/nofoto.png" />
                                             @endif
                                             <br />
-                                            <b>{{$data->user->name}}</b><br />
-                                            <b>NISN. {{$data->nisn}}</b><br />
-                                            <b>{{$data->jurusan}}</b><br />
+                                            <b>{{Auth::user()->name}}</b><br />
+                                            <b>NISN. {{Auth::user()->siswa->nisn}}</b><br />
+                                            <b>{{Auth::user()->siswa->jurusan}}</b><br />
                                             </div>
                                             <div class="col-md-9">
 
@@ -51,8 +51,9 @@
                                                     </p>
                                             </div>
                                         </div>
-
                                         <br /><br />
+                                        @if($boleh==1)
+
                                         <form action="{{route('cetak')}}" method="POST">
                                             @csrf
                                             <label>Ketik "SAYA SETUJU". jika Anda setuju untuk mematuhi persyaratan diatas</label>
@@ -65,6 +66,12 @@
                                             <input type="submit" class="btn btn-primary btn-block" value="Saya Setuju & Ingin Unduh Surat Kelulusan dalam bentuk PDF">
 
                                         </form>
+                                        @else
+                                        <div class="alert alert-info" role="alert">
+                                            <strong>Pengumuman Kelulisan dijadwalkan pada: 2 Mei 2020 , 16:00 WIB</strong>
+                                        </div>
+                                        @endif
+
 
                                     </div>
                                 </div>
