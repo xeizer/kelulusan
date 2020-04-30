@@ -51,11 +51,11 @@
                                         <br /><br />
                                         <form action="{{route('cetak')}}" method="POST">
                                             @csrf
-                                            <label>Ketik "SAYA SETUJU". jika Anda setuju untuk mematuhi peryaratan diatas</label>
+                                            <label>Ketik "SAYA SETUJU". jika Anda setuju untuk mematuhi persyaratan diatas</label>
                                             <input type="text" name="setuju" class="form-control" required>
                                             @error('pesan')
                                             <p class="form-text text-muted text-danger">
-                                            Ketik "SAYA SETUJU". jika Anda setuju untuk mematuhi peryaratan diatas
+                                            Ketik "SAYA SETUJU". jika Anda setuju untuk mematuhi persyaratan diatas
                                             </p>
                                             @enderror
                                             <input type="submit" class="btn btn-primary btn-block" value="Saya Setuju & Ingin Lihat Hasil">
