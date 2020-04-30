@@ -53,7 +53,7 @@
                                         </div>
 
                                         <br /><br />
-                                        <form action="{{route('siswa.cetak')}}" method="POST">
+                                        <form action="{{route('siswa.cetak')}}" target="_blank" method="POST">
                                             @csrf
                                             <input type="hidden" name="id" value="{{$data->id}}" />
                                             <label>Ketik "SAYA SETUJU". jika Anda setuju untuk mematuhi persyaratan diatas</label>
