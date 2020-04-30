@@ -27,7 +27,7 @@ class HomeController extends Controller
         if (Auth::user()->hasRole('admin')) {
             return view('home');
         } else {
-            return view('halamansiswa.index');
+            return view('halamansiswa.index')->with('boleh', 0);
         }
     }
     public function screenlock()
