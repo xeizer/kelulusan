@@ -17,7 +17,7 @@
                 @endif
                 <div class="col-md-3">
                     <div class="metric">
-                        <span class="icon"><i class="fa fa-download"></i></span>
+                        <span class="icon"><i class="fa fa-upload"></i></span>
                         <p>
                             <a href="{{route('mapel.index')}}" class="btn btn-primary">Mapel</a>
                         </p>
@@ -25,7 +25,7 @@
                 </div>
                 <div class="col-md-3">
                     <div class="metric">
-                        <span class="icon"><i class="fa fa-download"></i></span>
+                        <span class="icon"><i class="fa fa-upload"></i></span>
                         <p>
                             <a href="{{route('siswa.index')}}" class="btn btn-primary">Siswa</a>
                         </p>
@@ -33,7 +33,7 @@
                 </div>
                 <div class="col-md-3">
                     <div class="metric">
-                        <span class="icon"><i class="fa fa-download"></i></span>
+                        <span class="icon"><i class="fa fa-upload"></i></span>
                         <p>
                             <a href="" class="btn btn-primary">Nilai</a>
                         </p>
