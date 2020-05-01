@@ -61,7 +61,7 @@
                             <li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="{{asset('logo/android-icon-72x72.png')}}" class="img-circle" alt="Avatar"> <span>{{ Auth::user()->name }}</span><span class="caret"></span></a>
 							<ul class="dropdown-menu">
-								<li><a href="#"><i class="lnr lnr-user"></i> <span>Tentang Saya2</span></a></li>
+								<li><a href="#"><i class="lnr lnr-user"></i> <span>Tentang Saya</span></a></li>
 								<li><a href="#"><i class="lnr lnr-envelope"></i> <span>Pesan</span></a></li>
 								<li><a href="#"><i class="lnr lnr-cog"></i> <span>Pengaturan</span></a></li>
                                 <li>
@@ -88,8 +88,8 @@
                     @else
 					<ul class="nav">
 						<li><a href="{{route('home')}}" class="active"><i class="lnr lnr-home"></i> <span>Dashboard</span></a></li>
-						<li><a href="{{route('mapel.index')}}" class=""><i class="lnr lnr-code"></i> <span>Mapel</span></a></li>
-						<li><a href="{{route('siswa.index')}}" class=""><i class="lnr lnr-chart-bars"></i> <span>Siswa</span></a></li>
+						<li><a href="{{route('mapel.index')}}" class=""><i class="lnr lnr-book"></i> <span>Mapel</span></a></li>
+						<li><a href="{{route('siswa.index')}}" class=""><i class="lnr lnr-users"></i> <span>Siswa</span></a></li>
 						<li><a href="#" class=""><i class="lnr lnr-cog"></i> <span>Akun</span></a></li>
 						<li><a href="#" class=""><i class="lnr lnr-alarm"></i> <span>Pemberitahuan</span></a></li>
 						<li>
@@ -102,7 +102,7 @@
 								</ul>
 							</div>
 						</li>
-						<li><a href="tables.html" class=""><i class="lnr lnr-dice"></i> <span>Tabel</span></a></li>
+						<li><a href="tables.html" class=""><i class="lnr lnr-chart-bars"></i> <span>Grafik</span></a></li>
                     </ul>
                     @endrole
 				</nav>

@@ -19,7 +19,7 @@
                     <div class="metric">
                         <span class="icon"><i class="fa fa-upload"></i></span>
                         <p>
-                            <a href="{{route('mapel.index')}}" class="btn btn-primary">Mapel</a>
+                            <a href="{{route('mapel.index')}}" class="btn btn-primary"><i class="fa fa-book"></i> Mapel</a>
                         </p>
                     </div>
                 </div>
@@ -27,7 +27,7 @@
                     <div class="metric">
                         <span class="icon"><i class="fa fa-upload"></i></span>
                         <p>
-                            <a href="{{route('siswa.index')}}" class="btn btn-primary">Siswa</a>
+                            <a href="{{route('siswa.index')}}" class="btn btn-primary"><i class="lnr lnr-users"></i> Siswa</a>
                         </p>
                     </div>
                 </div>
@@ -35,7 +35,7 @@
                     <div class="metric">
                         <span class="icon"><i class="fa fa-upload"></i></span>
                         <p>
-                            <a href="" class="btn btn-primary">Nilai</a>
+                            <a href="" class="btn btn-primary"><i class="fa fa-calendar" ></i> Nilai</a>
                         </p>
                     </div>
                 </div>
