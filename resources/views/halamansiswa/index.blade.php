@@ -27,7 +27,7 @@
                                             @if(file_exists('foto/'.Auth::user()->siswa->nisn.'.jpg'))
                                             <img src="{{asset('foto/'.Auth::user()->siswa->nisn.'.jpg')}}" width="180px" />
                                             @else
-                                            <img src="foto/nofoto.png" />
+                                            <img src="{{asset('foto/nofoto.png')}}" />
                                             @endif
                                             <br />
                                             <b>{{Auth::user()->name}}</b><br />
