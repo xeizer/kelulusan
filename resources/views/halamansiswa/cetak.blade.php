@@ -99,19 +99,18 @@ Menerangkan bahwa yang namanya tercantum diatas dinyatakan:
         </tr>
         <tr>
             <td>
-                <div style="position: absolute; right: 0px; width: 250px; padding: 10px; text-align: center">
-                                    Pontianak, 2 Mei 2020<br/>
-                                    Kepala SMK Negeri 7 Pontianak<br /><br />
-
-                                    <img src="{{asset('admin/ttdkepsek_abriyandi.png')}}" width="100px" style="margin-top: 80px;margin-bottom: -300px"/>
-                                    <div style="border-bottom: 1px solid black;">ABRIYANDI, S.Pd, M.Si.</div>
+                <div style=" margin-left:auto; margin-right:0; width: 250px; text-align: center">
+                                    Pontianak, 2 Mei 2020<br />
+                                    Kepala SMK Negeri 7 Pontianak<br />
+                                    <img src="{{asset('admin/ttdkepsek_abriyandi.png')}}" width="100px" style="margin-top: -20px; margin-bottom:-30px" /><br />
+                                    <b style="border-bottom: 1px solid black;">ABRIYANDI, S.Pd, M.Si.</b><br />
                                     NIP. 19741009 199903 1 006
 
                 </div>
             </td>
         </tr>
         <tr>
-            <td style="padding-top: 120px">
+            <td style="padding-top: -100px">
                 NB: <br />
                 Bagi Siswa yang <b>Tidak Lulus</b> diberi<br>
                 kesempatan mengulang Tahun Ajaran 2020/2021
