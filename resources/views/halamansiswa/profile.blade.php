@@ -55,7 +55,7 @@
                                                             <tr>
                                                                 <td>Tempat, Tanggal lahir</td>
                                                                 <td style="padding-right: 20px; padding-left: 30px">:</td>
-                                                                <td>{{Auth::user()->siswa->tempat_lahir}}, {{Auth::user()->siswa->tanggal_lahir}}</td>
+                                                                <td>{{Auth::user()->siswa->tempat_lahir}}, {{date('d-M-Y', strtotime(Auth::user()->siswa->tanggal_lahir))}}</td>
                                                             </tr>
                                                             <tr>
                                                                 <td>Sekolah Asal</td>
