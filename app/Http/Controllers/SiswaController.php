@@ -69,8 +69,8 @@ class SiswaController extends Controller
         $user = User::find($req->user_id);
         $user->email = $req['nisn'] . "@smkn7ptk.sch.id";
         $user->name = $req['name'];
-        if ($req->password) {
-            $user->password = $req['password'];
+        if ($req['password']) {
+            $user->password = bcrypt($req['password']);
         }
         $user->save();
         $siswa = Siswa::where('user_id', $req->user_id)->first();
