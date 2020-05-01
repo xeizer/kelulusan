@@ -1,4 +1,4 @@
-@extends('layouts.master')
+@extends('layouts.mastersiswa')
 
 @section('content')
 <div class="main-content">

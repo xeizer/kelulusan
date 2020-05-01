@@ -33,4 +33,5 @@ Route::get('/siswa/edit/{id}', 'SiswaController@ubah')->middleware('role:admin')
 Route::post('/siswa/edit', 'SiswaController@ubahproses')->middleware('role:admin')->name('siswa.ubah.proses');
 
 //halaman sisswa
+Route::get('siswa/profile', 'HalamansiswaController@profile')->name('profile')->middleware('role:siswa|admin');
 Route::post('semoga/saya/lulus', 'HalamansiswaController@cetak')->name('cetak')->middleware('role:siswa|admin');

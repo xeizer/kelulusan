@@ -10,6 +10,12 @@ use Illuminate\Support\Facades\Auth;
 class HalamansiswaController extends Controller
 {
     //
+    public function profile()
+    {
+        return view('halamansiswa.profile', [
+            'data' => Siswa::cursor()
+        ]);
+    }
     public function cetak(Request $req)
     {
         if ($req->setuju == "SAYA SETUJU") {

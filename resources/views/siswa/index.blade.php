@@ -62,7 +62,7 @@
                                     <td><a href="{{route('siswa.lihat',$d->id)}}" class="label label-primary"><i class="fa fa-info-circle"></i> Lihat</a></td>
                                     <td>
                                         <a href="{{route('siswa.edit',$d->user_id)}}" class="label label-success"><i class="fa fa-info-circle"></i> Ubah</a>
-                                        <a href="{{route('siswa.hapus',$d->user_id)}}" onclick="return confirm('Yakin ?')" class="text-red label label-danger"><i class="fa fa-info-circle"></i> Hapus</a>
+                                        <a href="{{route('siswa.hapus',$d->user_id)}}" onclick="return confirm('Yakin ?')" class="label label-danger"><i class="fa fa-info-circle"></i> Hapus</a>
                                     </td>
                                 </tr>
                                 @endforeach
