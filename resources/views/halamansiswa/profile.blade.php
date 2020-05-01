@@ -25,9 +25,9 @@
                                             <div class="col-md-3">
 
                                             @if(file_exists('foto/'.Auth::user()->siswa->nisn.'.jpg'))
-                                            <img src="{{asset('foto/'.Auth::user()->siswa->nisn.'.jpg')}}" width="180px" />
+                                            <img src="{{asset('foto/'.Auth::user()->siswa->nisn.'.jpg')}}" width="150px" />
                                             @else
-                                            <img src="{{asset('foto/nofoto.png')}}" width="180px"/>
+                                            <img src="{{asset('foto/nofoto.png')}}" width="150px"/>
                                             @endif
                                             
                                             </div>
