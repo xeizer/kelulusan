@@ -8,7 +8,7 @@
                 <!-- CONTEXTUAL -->
                 <div class="panel panel-headline">
                     <div class="panel-heading">
-                        <h3 class="panel-title">TENTANG {{Auth::user()->name}}</h3>
+                        <h1 class="panel-title">{{Auth::user()->name}}</h1>
                         <p class="panel-subtitle">Siswa SMK Negeri 7 Pontianak</p>
                     </div>
                     <div class="panel-body">
