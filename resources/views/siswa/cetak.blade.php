@@ -47,7 +47,7 @@
                             @if(file_exists('foto/'.$nisn.'.jpg'))
                             <img src="{{asset('foto/'.$nisn.'.jpg')}}" width="90px" />
                             @else
-                            <img src="foto/nofoto.png" />
+                            <img src="{{asset('foto/nofoto.png')}}" />
                             @endif
                         </td>
                     </tr>
