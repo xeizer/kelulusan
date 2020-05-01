@@ -1,8 +1,5 @@
 <?php
 
-use App\Http\Controllers\HalamansiswaController;
-use Illuminate\Support\Facades\Route;
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -31,6 +28,9 @@ Route::get('/siswa', 'SiswaController@index')->middleware('role:admin')->name('s
 Route::post('/siswa/import', 'SiswaController@importSiswa')->middleware('role:admin')->name('siswa.import');
 Route::get('/siswa/lihat/{id}', 'SiswaController@lihatsiswa')->middleware('role:admin')->name('siswa.lihat');
 Route::post('/siswa/cetak/', 'SiswaController@cetak')->middleware('role:admin')->name('siswa.cetak');
+Route::get('/siswa/hapus/{id}', 'SiswaController@hapus')->middleware('role:admin')->name('siswa.hapus');
+Route::get('/siswa/edit/{id}', 'SiswaController@ubah')->middleware('role:admin')->name('siswa.edit');
+Route::post('/siswa/edit', 'SiswaController@ubahproses')->middleware('role:admin')->name('siswa.ubah.proses');
 
 //halaman sisswa
 Route::post('semoga/saya/lulus', 'HalamansiswaController@cetak')->name('cetak')->middleware('role:siswa|admin');

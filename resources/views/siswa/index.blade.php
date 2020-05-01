@@ -60,7 +60,12 @@
                                     <td>{{ $d->jurusan }}</td>
                                     <td>{{ $d->kelas }}</td>
                                     <td>{{ $d->keterangan }}</td>
-                                    <td><a href="{{route('siswa.lihat',$d->id)}}">Lihat</a></td>
+                                    <td>
+                                        <a href="{{route('siswa.lihat',$d->id)}}">Lihat</a>
+                                        <a href="{{route('siswa.edit',$d->user_id)}}">Ubah</a>
+                                        <a href="{{route('siswa.hapus',$d->user_id)}}" onclick="return confirm('Yakin ?')" class="text-red">hapus</a>
+
+                                    </td>
                                 </tr>
                                 @endforeach
                             </tbody>
