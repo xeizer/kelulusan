@@ -55,7 +55,7 @@
                         <td>{{$jurusan}}</td>
                     </tr>
                     <tr>
-                        <td>Tampat, Tanggal lahir</td>
+                        <td>Tempat, Tanggal lahir</td>
                         <td style="padding-right: 20px; padding-left: 30px">:</td>
                         <td>{{$ttl}}</td>
                     </tr>
