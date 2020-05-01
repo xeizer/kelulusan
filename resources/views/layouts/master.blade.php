@@ -104,7 +104,7 @@
 							<a href="#subPages" data-toggle="collapse" class="collapsed"><i class="lnr lnr-file-empty"></i> <span>Halaman</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
 							<div id="subPages" class="collapse ">
 								<ul class="nav">
-									<li><a href="page-profile.html" class="">Profile</a></li>
+									<li><a href="#" class="">Profile</a></li>
 									<li><a href="{{ route('login') }}" class="">Masuk</a></li>
 									<li><a href="{{ route('screenlock') }}" class="">Kunci Layar</a></li>
 								</ul>
