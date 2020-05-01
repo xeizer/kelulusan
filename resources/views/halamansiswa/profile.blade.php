@@ -29,7 +29,7 @@
                                             @else
                                             <img src="{{asset('foto/nofoto.png')}}" width="150px"/>
                                             @endif
-                                            
+
                                             </div>
                                             <div class="col-md-9">
 
@@ -63,7 +63,7 @@
                                                                 <td>SMK Negeri 7 Pontianak</td>
                                                             </tr>
                                                         </table>
-                                                        
+
                                                     </p>
                                             </div>
                                         </div>
@@ -75,7 +75,7 @@
                 </div>
                             <div class="alert alert-info" role="alert">
                                 <strong>Pengumuman Kelulusan dijadwalkan pada: 2 Mei 2020 , 16:00 WIB</strong>
-                            </div>   
+                            </div>
                 <!-- END CONTEXTUAL -->
         <div class="profile-detail">
             <div class="profile-info">

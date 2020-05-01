@@ -67,7 +67,7 @@
 								@endif
 							</a>
 							<ul class="dropdown-menu">
-								<li><a action="{{route('profile')}}" target="_blank" method="get" href="{{route('profile')}}"><i class="lnr lnr-user"></i> <span>Tentang Saya</span></a></li>
+								<li><a action="{{route('profile')}}" method="get" href="{{route('profile')}}"><i class="lnr lnr-user"></i> <span>Tentang Saya</span></a></li>
 								<li><a href="#"><i class="lnr lnr-envelope"></i> <span>Pesan</span></a></li>
 								<li><a href="#"><i class="lnr lnr-cog"></i> <span>Pengaturan</span></a></li>
                                 <li>

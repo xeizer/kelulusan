@@ -57,19 +57,11 @@
 				</div>
 				<div id="navbar-menu">
 					<ul class="nav navbar-nav navbar-right">
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="lnr lnr-question-circle"></i> <span>Bantuan</span> <i class="icon-submenu lnr lnr-chevron-down"></i></a>
-							<ul class="dropdown-menu">
-								<li><a href="#">Cara Menggunakan</a></li>
-								<li><a href="#">Unduh Data</a></li>
-								<li><a href="#">Keamanan</a></li>
-							</ul>
-                        </li>
 
                             <li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="{{asset('logo/android-icon-72x72.png')}}" class="img-circle" alt="Avatar"> <span>{{ Auth::user()->name }}</span><span class="caret"></span></a>
 							<ul class="dropdown-menu">
-								<li><a href="#"><i class="lnr lnr-user"></i> <span>Tentang Saya</span></a></li>
+								<li><a href="#"><i class="lnr lnr-user"></i> <span>Tentang Saya2</span></a></li>
 								<li><a href="#"><i class="lnr lnr-envelope"></i> <span>Pesan</span></a></li>
 								<li><a href="#"><i class="lnr lnr-cog"></i> <span>Pengaturan</span></a></li>
                                 <li>
