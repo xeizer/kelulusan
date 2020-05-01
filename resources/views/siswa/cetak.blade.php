@@ -38,18 +38,11 @@
         </tr>
         <tr>
             <td>
-                <table style="margin-left: 50px">
+                <table style="margin-left: 35px">
                     <tr>
                         <td>Nama</td>
                         <td style="padding-right: 20px; padding-left: 30px">:</td>
                         <td>{{$nama}}</td>
-                        <td rowspan="5" style="padding-left: 30px">
-                            @if(file_exists('foto/'.$nisn.'.jpg'))
-                            <img src="{{asset('foto/'.$nisn.'.jpg')}}" width="90px" />
-                            @else
-                            <img src="{{asset('foto/nofoto.png')}}" />
-                            @endif
-                        </td>
                     </tr>
                     <tr>
                         <td>Nomor Induk Siswa Nasional (NISN)</td>
@@ -98,6 +91,18 @@ Menerangkan bahwa yang namanya tercantum diatas dinyatakan:
             <td><div style="font-size: 20px;border: solid; font-weight: bold; width: 300px; margin: auto; text-align: center">{{$keterangan}}</div></td>
         </tr>
         <tr>
+            <td align="center">
+                <div style="margin-bottom: -200px;">
+                     @if(file_exists('foto/'.$nisn.'.jpg'))
+                            <img src="{{asset('foto/'.$nisn.'.jpg')}}" height="150px"  />
+                            @else
+                            <img src="{{asset('foto/nofoto.png')}}" height="150px" />
+                            @endif
+                </div>
+
+            </td>
+        </tr>
+        <tr>
             <td>
                 <div style=" margin-left:auto; margin-right:0; width: 250px; text-align: center">
                                     Pontianak, 2 Mei 2020<br />
@@ -110,7 +115,7 @@ Menerangkan bahwa yang namanya tercantum diatas dinyatakan:
             </td>
         </tr>
         <tr>
-            <td style="padding-top: -100px">
+            <td style="padding-top: -90px">
                 NB: <br />
                 Bagi Siswa yang <b>Tidak Lulus</b> diberi<br>
                 kesempatan mengulang Tahun Ajaran 2020/2021

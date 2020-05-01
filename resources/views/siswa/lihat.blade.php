@@ -27,7 +27,7 @@
                                             @if(file_exists('foto/'.$data->nisn.'.jpg'))
                                             <img src="{{asset('foto/'.$data->nisn.'.jpg')}}" width="180px" />
                                             @else
-                                            <img src="{{asset('foto/nofoto.png')}}" />
+                                            <img src="{{asset('foto/nofoto.png')}}" width="180px"/>
                                             @endif
                                             <br />
                                             <b>{{$data->user->name}}</b><br />
