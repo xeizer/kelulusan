@@ -59,12 +59,10 @@
                                     <td>{{ $d->tanggal_lahir }}</td>
                                     <td>{{ $d->jurusan }}</td>
                                     <td>{{ $d->kelas }}</td>
-                                    <td>{{ $d->keterangan }}</td>
+                                    <td><a href="{{route('siswa.lihat',$d->id)}}" class="label label-primary"><i class="fa fa-info-circle"></i> Lihat</a></td>
                                     <td>
-                                        <a href="{{route('siswa.lihat',$d->id)}}">Lihat</a>
-                                        <a href="{{route('siswa.edit',$d->user_id)}}">Ubah</a>
-                                        <a href="{{route('siswa.hapus',$d->user_id)}}" onclick="return confirm('Yakin ?')" class="text-red">hapus</a>
-
+                                        <a href="{{route('siswa.edit',$d->user_id)}}" class="label label-success"><i class="fa fa-info-circle"></i> Ubah</a>
+                                        <a href="{{route('siswa.hapus',$d->user_id)}}" onclick="return confirm('Yakin ?')" class="text-red label label-danger"><i class="fa fa-info-circle"></i> hapus</a>
                                     </td>
                                 </tr>
                                 @endforeach
