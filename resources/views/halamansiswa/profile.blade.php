@@ -77,17 +77,6 @@
                                 <strong>Pengumuman Kelulusan dijadwalkan pada: 2 Mei 2020 , 16:00 WIB</strong>
                             </div>
                 <!-- END CONTEXTUAL -->
-        <div class="profile-detail">
-            <div class="profile-info">
-                <h4 class="heading">Tautan</h4>
-                <ul class="list-inline social-icons">
-                    <li><a href="www.facebook.com" class="facebook-bg"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="www.twitter.com" class="twitter-bg"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="www.youtube.com" class="youtube-bg"><i class="fa fa-youtube"></i></a></li>
-                    <li><a href="www.github.com" class="github-bg"><i class="fa fa-github"></i></a></li>
-                </ul>
-            </div>
-        </div>
             </div>
         </div>
     </div>
