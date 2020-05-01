@@ -35,17 +35,36 @@
 
                                                 <p>Selamat datang di halaman Pengumuman Kelulusan SMK Negeri 7 Pontianak</p>
                                                     <p>
-                                                        Ini adalah data-data anda, jika ada perbedaan/kesalahan silahkan hubungi admin.
-                                                        <ol>
-                                                            <li>Nama                   : {{Auth::user()->name}}</li>
-                                                            <li>NISN.                  : {{Auth::user()->siswa->nisn}}</li>
-                                                            <li>Kelas                  : XII {{Auth::user()->siswa->kelas}}</li>
-                                                            <li>Jurusan                : {{Auth::user()->siswa->jurusan}}</li>
-                                                            <li>Program Studi          : {{Auth::user()->siswa->pstudi}}</li>
-                                                            <li>Tempat & Tanggal Lahir : {{Auth::user()->siswa->tempat_lahir}}, {{Auth::user()->siswa->tanggal_lahir}}</li>
-                                                        </ol>
+                                                        Ini adalah Profil {{Auth::user()->name}}, jika ada perbedaan/kesalahan silahkan hubungi admin.
+                                                        <table style="margin-left: 35px">
+                                                            <tr>
+                                                                <td>Nama</td>
+                                                                <td style="padding-right: 20px; padding-left: 30px">:</td>
+                                                                <td>{{Auth::user()->name}}</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Nomor Induk Siswa Nasional (NISN)</td>
+                                                                <td style="padding-right: 20px; padding-left: 30px">:</td>
+                                                                <td>{{Auth::user()->siswa->nisn}}</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Jurusan</td>
+                                                                <td style="padding-right: 20px; padding-left: 30px">:</td>
+                                                                <td>{{Auth::user()->siswa->jurusan}}</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Tempat, Tanggal lahir</td>
+                                                                <td style="padding-right: 20px; padding-left: 30px">:</td>
+                                                                <td>{{Auth::user()->siswa->tempat_lahir}}, {{Auth::user()->siswa->tanggal_lahir}}</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Sekolah Asal</td>
+                                                                <td style="padding-right: 20px; padding-left: 30px">:</td>
+                                                                <td>SMK Negeri 7 Pontianak</td>
+                                                            </tr>
+                                                        </table>
+                                                        
                                                     </p>
-                                                <p>Pengumuman Kelulusan dijadwalkan pada: 2 Mei 2020 , 16:00 WIB</p>    
                                             </div>
                                         </div>
                                     </div>
@@ -54,6 +73,9 @@
                         </div>
                     </div>
                 </div>
+                            <div class="alert alert-info" role="alert">
+                                <strong>Pengumuman Kelulusan dijadwalkan pada: 2 Mei 2020 , 16:00 WIB</strong>
+                            </div>   
                 <!-- END CONTEXTUAL -->
         <div class="profile-detail">
             <div class="profile-info">

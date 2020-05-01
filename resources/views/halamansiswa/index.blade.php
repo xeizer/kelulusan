@@ -29,10 +29,6 @@
                                             @else
                                             <img src="{{asset('foto/nofoto.png')}}" width="180px"/>
                                             @endif
-                                            <br />
-                                            <b>{{Auth::user()->name}}</b><br />
-                                            <b>NISN. {{Auth::user()->siswa->nisn}}</b><br />
-                                            <b>{{Auth::user()->siswa->jurusan}}</b><br />
                                             </div>
                                             <div class="col-md-9">
 
