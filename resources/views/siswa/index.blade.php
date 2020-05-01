@@ -39,6 +39,7 @@
                             <thead>
                                 <tr>
                                     <th>No</th>
+                                    <th>FOTO</th>
                                     <th>Nama</th>
                                     <th>NISN</th>
                                     <th>Tempat Lahir</th>
@@ -53,6 +54,13 @@
                                 @foreach ($data as $d)
                                 <tr>
                                     <td scope="row">{{$loop->iteration}}</td>
+                                    <td>
+@if(file_exists('foto/'.$d->nisn.'.jpg'))
+                            <img src="{{asset('foto/'.$d->nisn.'.jpg')}}" height="50px"  />
+                            @else
+                            <img src="{{asset('foto/nofoto.png')}}" height="50px" />
+                            @endif
+                                    </td>
                                     <td>{{ $d->user->name }}</td>
                                     <td>{{ $d->nisn }}</td>
                                     <td>{{ $d->tempat_lahir }}</td>
